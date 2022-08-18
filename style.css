@@ -53,11 +53,20 @@ body {
   background-color: transparent;
   border-color: transparent;
   box-sizing: content-box;
+  color: var(--dark-blue-300);
+  font-family: "Inter";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
   margin-top: 80px;
-  overflow: hidden;
   overflow-y: auto;
+  overflow: hidden;
   resize: none;
   width: 100%;
+}
+.input-text::placeholder {
+  color: var(--dark-blue-300);
 }
 .input-text:focus {
   outline: none;
@@ -72,42 +81,62 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
-  margin: 16px 0;
+  margin: 16px;
+}
+.instruction > img {
+  vertical-align: text-top;
 }
 .btn {
   background-color: transparent;
   border-radius: 24px;
   border: 0;
   border: 1px solid var(--dark-blue-300);
+  color: var(--dark-blue-300);
+  /* cursor: pointer; */
+  font-family: "Inter";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
   height: 67px;
+  line-height: 19px;
+  text-align: center;
+  background-position: center;
+  transition: background 0.6s;
 }
-.btn--encrypt {
-  background-color: var(--dark-blue-300);
+
+.btn:hover {
+  background: var(--dark-blue-300)
+    radial-gradient(circle, transparent 1%, var(--dark-blue-300) 1%)
+    center/15000%;
   color: white;
 }
+.btn:active {
+  background-color: var(--dark-blue-200);
+  background-size: 100%;
+  transition: background 0s;
+}
 .btn--decrypt {
-  color: var(--dark-blue-300);
   margin-top: 24px;
 }
 .output-text {
   background: white;
   border-radius: 32px;
   box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
-  margin-top: 63px;
-  padding: 32px;
   font-family: "Inter";
   font-size: 24px;
   font-style: normal;
+  margin-top: 63px;
+  padding: 32px;
 }
 .output-text__title {
-  display: none;
+   
   color: var(--gray-500);
   font-weight: 700;
   line-height: 120%;
   text-align: center;
 }
 .output-text__subtitle {
-  display: none;
+ 
   color: var(--gray-400);
   font-size: 16px;
   font-weight: 400;

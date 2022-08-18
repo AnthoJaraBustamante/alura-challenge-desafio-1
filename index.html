@@ -20,27 +20,29 @@
             <div class="header">
                 <img src="assets/logo.png" alt="Alura logo">
             </div>
-            <textarea  class="input-text custom-scrollbar" title="Ingresa texto" label="Ingresa el texto aquí"
+            <textarea id="input" class="input-text custom-scrollbar" title="Ingresa texto" label="Ingresa el texto aquí"
                 placeholder="Ingresa el texto aquí"></textarea>
 
-            <div class="instruction"><span>Solo letras minúsculas y sin acentos</span></div>
+            <div class="instruction">
+                <img src="assets/circle_exclamation.png" alt="Importante">
+                <span>Solo letras minúsculas y sin acentos</span>
+            </div>
 
-            <button class="btn btn--encrypt">Encriptar</button>
-            <button class="btn btn--decrypt">Desencriptar</button>
+            <button class="btn btn--encrypt" onclick="encrypt()">Encriptar</button>
+            <button class="btn btn--decrypt" onclick="decrypt()">Desencriptar</button>
             <div class="output-text">
-                <div class="output-text__title">Ningún mensaje fue encontrado</div>
-                <div class="output-text__subtitle">Ingresa el texto que desees encriptar o desencriptar.</div>
-                <div class="output-text__text">Nulla dolor sint proident officia ex. Officia ut in occaecat qui sit
-                    aliqua excepteur proident qui
-                    amet esse nisi do sint. Minim consectetur nulla amet consequat elit eiusmod est dolor culpa eiusmod
-                    ipsum. Ex nulla Lorem sit laboris officia aute qui enim pariatur. Qui elit enim labore adipisicing
-                    sit aute est eu mollit enim.
-
-                    Non eiusmod pariatur anim adipisicing magna culpa. Consectetur labore Lorem elit laborum irure sit
-                    voluptate. Excepteur fugiat tempor fugiat aliquip esse incididunt est anim eu ea.</div>
-                <button class="btn btn--copy">Copiar</button>
+                <div id="not-found">
+                    <div class="output-text__title">Ningún mensaje fue encontrado</div>
+                    <div class="output-text__subtitle">Ingresa el texto que desees encriptar o desencriptar.
+                    </div>
+                </div>
+                <div id="found">
+                    <p id="output-text" class="output-text__text"> </p>
+                    <button id="copy-button" class="btn btn--copy" onclick="copy()">Copiar</button>
+                </div>
             </div>
         </div>
     </main>
+    <script src="./script.js" type="text/javascript"></script>
 
 </html>
