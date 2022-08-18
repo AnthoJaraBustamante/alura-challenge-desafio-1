@@ -8,10 +8,11 @@ var cacheMessage = "";
 
 function validateMessage() {
   if (input.value == "") {
-    notFound.style.display = "block";
+    notFound.style.display = "table-cell";
     found.style.display = "none";
+    copyButton.style.display = "none";
     cacheMessage = "";
-    return false;
+    return false; 
   }
   return true;
 }
@@ -20,7 +21,9 @@ function encrypt() {
     return;
   }
   notFound.style.display = "none";
-  found.style.display = "block";
+  found.style.display = "inline-block";
+  copyButton.style.display = "block";
+
   var encryptedText = "";
   for (let index = 0; index < input.value.length; index++) {
     const element = input.value[index];
@@ -53,6 +56,7 @@ function decrypt() {
   }
   notFound.style.display = "none";
   found.style.display = "block";
+  copyButton.style.display = "block";
   var decryptedText = input.value;
   decryptedText = decryptedText.replace(/enter/g, "e");
   decryptedText = decryptedText.replace(/imes/g, "i");
@@ -67,4 +71,7 @@ function decrypt() {
 function copy() {
   navigator.clipboard.writeText(cacheMessage);
   copyButton.innerHTML = "Copiado";
+  setTimeout(() => {
+    copyButton.innerHTML = "Copiar";
+  }, 1200);
 }

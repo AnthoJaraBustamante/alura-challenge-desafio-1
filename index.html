@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Alura Challenge 1 - Encriptador</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="./style.css">
 </head>
@@ -21,7 +21,7 @@
                 <img src="assets/logo.png" alt="Alura logo">
             </div>
             <textarea id="input" class="input-text custom-scrollbar" title="Ingresa texto" label="Ingresa el texto aquí"
-                placeholder="Ingresa el texto aquí"></textarea>
+                placeholder="Ingresa el texto aquí" ></textarea>
 
             <div class="instruction">
                 <img src="assets/circle_exclamation.png" alt="Importante">
@@ -31,12 +31,13 @@
             <button class="btn btn--encrypt" onclick="encrypt()">Encriptar</button>
             <button class="btn btn--decrypt" onclick="decrypt()">Desencriptar</button>
             <div class="output-text">
-                <div id="not-found">
+                <div id="not-found" class="not-found">
+                    <img src="assets/not_found.png" alt="sin resultados">
                     <div class="output-text__title">Ningún mensaje fue encontrado</div>
                     <div class="output-text__subtitle">Ingresa el texto que desees encriptar o desencriptar.
                     </div>
                 </div>
-                <div id="found">
+                <div id="found" class="not-found">
                     <p id="output-text" class="output-text__text"> </p>
                     <button id="copy-button" class="btn btn--copy" onclick="copy()">Copiar</button>
                 </div>
