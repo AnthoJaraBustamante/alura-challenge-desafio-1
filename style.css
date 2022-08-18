@@ -203,7 +203,7 @@ body {
     grid-row-start: 1;
     grid-row-end: 10;
     grid-column-start: 4;
-    grid-column-end: 5;
+    grid-column-end: 6;
     width: 400px;
     margin-top: 0;
     height: 100%;
@@ -212,8 +212,8 @@ body {
   .input-text {
     grid-row-start: 2;
     grid-row-end: 9;
-    grid-column-start: 1;
-    grid-column-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 4;
     height: 100%;
     width: 90%;
     margin-top: 20px;
@@ -221,13 +221,13 @@ body {
   .instruction {
     grid-row-start: 9;
     grid-row-end: 10;
-    grid-column-start: 1;
-    grid-column-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
   }
 
   .btn--encrypt {
-    grid-column-start: 1;
-    grid-column-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
     grid-row-start: 10;
     grid-row-end: 12;
     margin:0 12px;
@@ -237,8 +237,8 @@ body {
   .btn--decrypt {
     grid-row-start: 10;
     grid-row-end: 12;
-    grid-column-start: 2;
-    grid-column-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 4;
     margin-top: 0;
     margin:0 12px;
     /* width: ; */
