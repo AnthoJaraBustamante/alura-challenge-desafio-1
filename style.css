@@ -46,7 +46,6 @@ body {
   display: grid;
   grid-auto-rows: 48px minmax(auto, 255px) auto auto auto auto;
 }
-
 .input-text {
   background-color: transparent;
   border-color: transparent;
@@ -155,7 +154,6 @@ body {
 @media only screen and (min-width: 768px) {
   .grid-container {
     grid-auto-columns: auto auto;
-    /* align-tracks: ; */
   }
   .header {
     grid-column-start: 1;
@@ -189,15 +187,9 @@ body {
   }
 }
 @media only screen and (min-width: 1024px) {
-  /* * {
-    background-color: #757fb2;
-  } */
   .grid-container {
-    /* grid-auto-rows: 48px minmax(auto, 255px) auto auto auto auto; */
     grid-auto-columns: auto;
-    /* grid-row: auto; */
   }
-
   .output-text {
     display: table;
     grid-row-start: 1;
@@ -208,7 +200,6 @@ body {
     margin-top: 0;
     height: 100%;
   }
-
   .input-text {
     grid-row-start: 2;
     grid-row-end: 9;
@@ -224,15 +215,12 @@ body {
     grid-column-start: 2;
     grid-column-end: 3;
   }
-
   .btn--encrypt {
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 10;
     grid-row-end: 12;
-    margin:0 12px;
-    /* width: ; */
-    /* margin-bottom: 200px; */
+    margin: 0 12px;
   }
   .btn--decrypt {
     grid-row-start: 10;
@@ -240,23 +228,18 @@ body {
     grid-column-start: 3;
     grid-column-end: 4;
     margin-top: 0;
-    margin:0 12px;
-    /* width: ; */
-    /* margin-bottom: 200px; */
+    margin: 0 12px;
   }
   .not-found {
     display: table-cell;
     vertical-align: middle;
-    /* background-color: red; */
     margin: 0 auto;
- 
   }
   .not-found img {
     display: inline;
   }
-  .output-text{
-
-    max-width: 400px; 
-    overflow:hidden;
+  .output-text {
+    max-width: 400px;
+    overflow: hidden;
   }
 }
